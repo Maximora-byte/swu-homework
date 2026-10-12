@@ -49,11 +49,15 @@
 
 ## 编译与提交
 
-在仓库根目录执行，例如：
+在仓库根目录执行，例如（Linux / macOS 或 Git Bash，已安装 GCC）：
 
 ```bash
-gcc "2026秋季高级语言程序设计(C语言)/超星/hello_world.c" -o hello
+mkdir -p build
+gcc "2026秋季高级语言程序设计(C语言)/超星/hello_world.c" -o build/hello
+./build/hello
 ```
+
+输出放在已被 Git 忽略的 `build/` 目录。Windows PowerShell 的建目录与运行写法见[仓库首页](../README.md#开始使用)。
 
 涉及 `sqrt`、`sin`、`exp` 等数学函数的程序，在部分 GCC 环境中需要在编译命令末尾添加 `-lm`。
 

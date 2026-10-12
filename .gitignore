@@ -69,3 +69,7 @@ cmake-build-*/
 
 .DS_Store
 Thumbs.db
+
+# Python 回归测试缓存
+__pycache__/
+*.py[cod]
