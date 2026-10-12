@@ -11,7 +11,9 @@
 **西南大学 · 计算机科学与技术**  
 课程练习 · 经验交流 · 共同完善
 
-[📚 找课程](#课程导航) · [🧭 看目录](#仓库地图) · [💬 提问交流](https://github.com/Maximora-byte/swu-homework/issues) · [🤝 参与共建](#参与共建)
+[📚 找课程](#课程导航) · [🚀 开始使用](#开始使用) · [🧭 看目录](#仓库地图) · [🧪 回归检查](#回归检查)
+
+[💬 提问交流](https://github.com/Maximora-byte/swu-homework/issues) · [🤝 参与共建](#参与共建)
 
 </div>
 
@@ -62,15 +64,28 @@ git clone https://github.com/Maximora-byte/swu-homework.git
 cd swu-homework
 ```
 
-单文件编译示例（已安装 GCC 的环境）：
+单文件编译示例（Linux / macOS 或 Git Bash，已安装 GCC）：
 
 ```bash
-gcc "2026秋季高级语言程序设计(C语言)/超星/hello_world.c" -o hello
+mkdir -p build
+gcc "2026秋季高级语言程序设计(C语言)/超星/hello_world.c" -o build/hello
+./build/hello
 ```
 
-编译后运行生成的可执行文件；Windows 下通常为 `hello.exe`，Linux / macOS 下可使用 `./hello`。其他题目可能需要输入数据或额外的数学库链接选项，请按源码与编译器提示调整。
+编译结果统一放在已被 Git 忽略的 `build/` 中。Windows PowerShell 可先执行 `New-Item -ItemType Directory -Force build | Out-Null`，编译时指定 `-o build/hello.exe`，再运行 `.\build\hello.exe`。其他题目可能需要输入数据或额外的数学库链接选项，请按源码与编译器提示调整。
 
 </details>
+
+<a id="回归检查"></a>
+### 已有回归检查
+
+在仓库根目录执行（需要 Python 3 和可在命令行调用的 GCC；Windows 可用 `python` 替换 `python3`）：
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+当前测试仅覆盖 [保存到 sum 的 A+B 练习](tests/test_sum_two_integers_stored.py)，检查编译格式警告和 12 组 64 位整数用例；不代表其他课程练习均已验证。测试使用临时目录存放可执行文件，Python 缓存也应保持在 Git 跟踪范围之外。
 
 <a id="仓库地图"></a>
 ## 🗂️ 仓库地图
