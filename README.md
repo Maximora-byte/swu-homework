@@ -11,7 +11,9 @@
 **西南大学 · 计算机科学与技术**  
 课程练习 · 经验交流 · 共同完善
 
-[📚 找课程](#课程导航) · [🧭 看目录](#仓库地图) · [💬 提问交流](https://github.com/Maximora-byte/swu-homework/issues) · [🤝 参与共建](#参与共建)
+[📚 找课程](#课程导航) · [🚀 开始使用](#开始使用) · [🧭 看目录](#仓库地图) · [🧪 回归检查](#回归检查)
+
+[💬 提问交流](https://github.com/Maximora-byte/swu-homework/issues) · [🤝 参与共建](#参与共建)
 
 </div>
 
@@ -74,6 +76,7 @@ gcc "2026秋季高级语言程序设计(C语言)/超星/hello_world.c" -o build/
 
 </details>
 
+<a id="回归检查"></a>
 ### 已有回归检查
 
 在仓库根目录执行（需要 Python 3 和可在命令行调用的 GCC；Windows 可用 `python` 替换 `python3`）：
