@@ -14,7 +14,7 @@ SOURCE = (
     Path(__file__).resolve().parents[1]
     / "2026秋季高级语言程序设计(C语言)"
     / "超星"
-    / "sum_two_integers_stored.c"
+    / "两整数保存求和_sum_two_integers_stored.c"
 )
 CASES = [
     ("0 0\n", "0"),
