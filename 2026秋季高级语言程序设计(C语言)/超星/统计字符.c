@@ -1,6 +1,4 @@
-
 #include <stdio.h>
-
 int main()
 {
     int letters = 0, space = 0, digit = 0, other = 0;
